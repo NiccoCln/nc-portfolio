@@ -1,0 +1,18 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif, serif;
+  background-color: #abd1c6;
+}
+
+:root {
+  --lightGreen: #abd1c6;
+  --darkGreen: #004643;
+  --white: #fffffe;
+  --black: #001e1d;
+  --darkOrange: #ff8e3c;
+  --lightOrange: #f9bc60;
+}

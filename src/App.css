@@ -1,0 +1,157 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header {
+  flex: 0 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.content {
+  flex: 1 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-toolbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1vw;
+  flex-wrap: inherit;
+}
+
+.navlink {
+  text-decoration: none;
+  margin: 0px 10px;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.navlink-active {
+  text-decoration: none;
+  margin: 0px 10px;
+  color: var(--darkGreen);
+  font-weight: 800;
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5vw;
+  border: 2px solid var(--lightOrange);
+  border-radius: 25px;
+  margin: 25px 25px;
+  background-color: var(--darkGreen);
+}
+
+h1 {
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--lightGreen);
+}
+
+.about {
+  align-items: center;
+  text-align: center;
+}
+
+.about div {
+  width: 250px;
+  height: 250px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.resume {
+  justify-content: center;
+}
+
+.resume p {
+  color: var(--black);
+}
+
+.accordion-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.65vw;
+}
+
+.projects {
+  justify-content: center;
+  text-align: center;
+  gap: 2.5vh;
+}
+
+.card-carousel {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 5%;
+  transition: transform 0.6s, background-color 0.3s, transform-origin 0.3s;
+  cursor: pointer;
+  background-color: #ff8e3c;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.card:hover {
+  transform: scale(1.1) rotateY(10deg);
+  background-color: #ffcc00cc;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card-content {
+  padding: 5%;
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform 0.6s;
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+}
+
+.contact {
+  justify-content: center;
+  text-align: center;
+  gap: 2.5vh;
+}
+
+.contact a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .footer {
+  flex: 0 0 auto;
+  width: 100%;
+  background-color: aqua;
+  height: 5vh;
+}
+
+.flexCenterColContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
