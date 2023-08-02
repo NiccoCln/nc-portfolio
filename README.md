@@ -1,1 +1,1 @@
- https://niccocln.github.io/dev-portfolio/
+https://niccocln.github.io/nc-portfolio/
