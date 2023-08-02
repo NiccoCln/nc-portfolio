@@ -1,16 +1,16 @@
 import "./App.css";
-import Header from "./components/Header";
-import AboutMe from "./components/AboutMe";
-import Resume from "./components/Resume";
-import Projects from "./components/Projects";
-// import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
-import Contact from "./components/Contact";
+
+import AboutMe from "./components/pages/AboutMe";
+import Resume from "./components/pages/Resume/Resume";
+import Projects from "./components/pages/Projects";
+import Contact from "./components/pages/Contact";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <div className="app">
-      <Header />
+      <Navbar />
 
       <div className="content">
         <Routes>
@@ -20,8 +20,6 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-
-      {/* <Footer /> */}
     </div>
   );
 };

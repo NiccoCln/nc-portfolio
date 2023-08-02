@@ -1,0 +1,16 @@
+import { motion } from "framer-motion";
+
+const AnimatedPage = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      style={{ display: "flex", justifyContent: "center" }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+export default AnimatedPage;
